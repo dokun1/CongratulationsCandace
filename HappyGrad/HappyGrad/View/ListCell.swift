@@ -12,6 +12,7 @@ import SDWebImage
 
 struct ListCell: View {
   var cellItem: CongratsItem
+  
   var body: some View {
     VStack {
       WebImage(url: cellItem.imageURL)
@@ -22,7 +23,7 @@ struct ListCell: View {
         .frame(width: 250, height: 250)
         .clipShape(Circle())
         .overlay(Circle().stroke(Color.pink, lineWidth: 4))
-        .shadow(radius: 10)
+        .shadow(color: Color.pink, radius: 10, x: 5, y: 5)
         .padding()
       Text(cellItem.displayName)
         .font(.title)

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
   @ObservedObject var viewModel: ViewModel
+  @State var showConstantMessage = false
   
   init(model: ViewModel) {
     self.viewModel = model
@@ -19,13 +20,29 @@ struct ContentView: View {
     NavigationView {
       CongratsList(items: self.viewModel.allItems)
         .navigationBarTitle("Congratulations!!!")
-    }
+        .navigationBarItems(trailing:
+          HStack {
+            Button(action: {
+              self.viewModel.fetchImageNames()
+            }, label: {
+              Image(systemName: "arrow.clockwise")
+            })
+            Button(action: {
+              self.showConstantMessage.toggle()
+            }, label: {
+              Image(systemName: "message")
+            })
+          }
+      )
+      }
     .alert(item: self.$viewModel.error) { error in
       Alert(
         title: Text("Network error"),
         message: Text(error.localizedDescription),
         dismissButton: .cancel()
       )
+    }.alert(isPresented: self.$showConstantMessage) {
+      Alert(title: Text("I love you so much"), message: Text("I am so proud of you and I want you to always have a reminder in your pocket of how loved and admired you are ❤️"), dismissButton: .cancel())
     }
   }
 }
