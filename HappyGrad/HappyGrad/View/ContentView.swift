@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State var names: [String] = ["david", "barnet", "tristan"]
   var body: some View {
     NavigationView {
-      Text("SwiftUI")
+      CongratsList(names: names)
         .navigationBarTitle("Congratulations!!!")
     }
   }
@@ -19,6 +20,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ContentView(names: ["barnet", "david", "tristan", "david", "tristan", "barnet"])
   }
 }

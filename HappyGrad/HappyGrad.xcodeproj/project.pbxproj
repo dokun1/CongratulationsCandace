@@ -20,6 +20,12 @@
 		504C2ED82470902E0012DA56 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2ED72470902E0012DA56 /* ActivityIndicator.swift */; };
 		504C2EDA247090820012DA56 /* ViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2ED9247090820012DA56 /* ViewLoader.swift */; };
 		504C2EDC2470928E0012DA56 /* CongratsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2EDB2470928E0012DA56 /* CongratsViewModel.swift */; };
+		504F113F2471C01400B67EB8 /* barnet.png in Resources */ = {isa = PBXBuildFile; fileRef = 504F113C2471C01400B67EB8 /* barnet.png */; };
+		504F11402471C01400B67EB8 /* david.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 504F113D2471C01400B67EB8 /* david.jpg */; };
+		504F11412471C01400B67EB8 /* tristan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 504F113E2471C01400B67EB8 /* tristan.jpg */; };
+		504F114C2472D34D00B67EB8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504F114A2472D34D00B67EB8 /* AVFoundation.framework */; };
+		504F114D2472D34D00B67EB8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504F114B2472D34D00B67EB8 /* AVKit.framework */; };
+		504F114F2472D5D500B67EB8 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F114E2472D5D500B67EB8 /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		504C2ED72470902E0012DA56 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		504C2ED9247090820012DA56 /* ViewLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoader.swift; sourceTree = "<group>"; };
 		504C2EDB2470928E0012DA56 /* CongratsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewModel.swift; sourceTree = "<group>"; };
+		504F113C2471C01400B67EB8 /* barnet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barnet.png; path = ../../docker/images/barnet.png; sourceTree = "<group>"; };
+		504F113D2471C01400B67EB8 /* david.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = david.jpg; path = ../../docker/images/david.jpg; sourceTree = "<group>"; };
+		504F113E2471C01400B67EB8 /* tristan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tristan.jpg; path = ../../docker/images/tristan.jpg; sourceTree = "<group>"; };
+		504F114A2472D34D00B67EB8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		504F114B2472D34D00B67EB8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		504F114E2472D5D500B67EB8 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504F114D2472D34D00B67EB8 /* AVKit.framework in Frameworks */,
+				504F114C2472D34D00B67EB8 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +68,10 @@
 		504C2EA824708ADF0012DA56 = {
 			isa = PBXGroup;
 			children = (
+				504F113B2471BFFC00B67EB8 /* TestImages */,
 				504C2EB324708ADF0012DA56 /* HappyGrad */,
 				504C2EB224708ADF0012DA56 /* Products */,
+				504F11492472D34D00B67EB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +116,28 @@
 				504C2EDB2470928E0012DA56 /* CongratsViewModel.swift */,
 				504C2ED72470902E0012DA56 /* ActivityIndicator.swift */,
 				504C2ED9247090820012DA56 /* ViewLoader.swift */,
+				504F114E2472D5D500B67EB8 /* VideoPlayer.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		504F113B2471BFFC00B67EB8 /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+				504F113C2471C01400B67EB8 /* barnet.png */,
+				504F113D2471C01400B67EB8 /* david.jpg */,
+				504F113E2471C01400B67EB8 /* tristan.jpg */,
+			);
+			path = TestImages;
+			sourceTree = "<group>";
+		};
+		504F11492472D34D00B67EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				504F114A2472D34D00B67EB8 /* AVFoundation.framework */,
+				504F114B2472D34D00B67EB8 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +204,9 @@
 			files = (
 				504C2EC424708AE20012DA56 /* LaunchScreen.storyboard in Resources */,
 				504C2EC124708AE20012DA56 /* Preview Assets.xcassets in Resources */,
+				504F11402471C01400B67EB8 /* david.jpg in Resources */,
+				504F11412471C01400B67EB8 /* tristan.jpg in Resources */,
+				504F113F2471C01400B67EB8 /* barnet.png in Resources */,
 				504C2EBE24708AE20012DA56 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +227,7 @@
 				504C2ECC24708E9C0012DA56 /* ListCell.swift in Sources */,
 				504C2ED024708EBD0012DA56 /* CongratsList.swift in Sources */,
 				504C2EB724708ADF0012DA56 /* SceneDelegate.swift in Sources */,
+				504F114F2472D5D500B67EB8 /* VideoPlayer.swift in Sources */,
 				504C2EDC2470928E0012DA56 /* CongratsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
