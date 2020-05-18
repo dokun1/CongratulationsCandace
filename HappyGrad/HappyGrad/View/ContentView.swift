@@ -9,17 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var names: [String] = ["david", "barnet", "tristan"]
+  @State var names: [String] = ["Tristan-Trevino", "Morgan-and-Tyler-Langlais", "Barnet-Levinson"]
   var body: some View {
     NavigationView {
       CongratsList(names: names)
         .navigationBarTitle("Congratulations!!!")
+     
     }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView(names: ["barnet", "david", "tristan", "david", "tristan", "barnet"])
+    ContentView(names: ["Tristan-Trevino", "Morgan-and-Tyler-Langlais", "Barnet-Levinson"])
   }
 }

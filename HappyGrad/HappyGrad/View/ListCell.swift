@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ListCell: View {
-  @State var imageName = "barnet.png"
+  @State var imageName = ""
   var body: some View {
     VStack {
       Image(imageName)
@@ -17,18 +17,19 @@ struct ListCell: View {
         .aspectRatio(contentMode: .fill)
         .frame(width: 250, height: 250)
         .clipShape(Circle())
-        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+        .overlay(Circle().stroke(Color.pink, lineWidth: 4))
         .shadow(radius: 10)
         .padding()
-      Text(imageName)
+      Text(imageName.replacingOccurrences(of: "-", with: " "))
         .font(.title)
-        .fontWeight(.heavy)
+        .fontWeight(.bold)
+        .multilineTextAlignment(.center)
     }
   }
 }
 
 struct ListCell_Previews: PreviewProvider {
   static var previews: some View {
-    ListCell(imageName: "david")
+    ListCell(imageName: "Barnet-Levinson")
   }
 }
