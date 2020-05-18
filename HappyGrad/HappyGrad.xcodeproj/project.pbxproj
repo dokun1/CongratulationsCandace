@@ -21,9 +21,6 @@
 		504F114C2472D34D00B67EB8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504F114A2472D34D00B67EB8 /* AVFoundation.framework */; };
 		504F114D2472D34D00B67EB8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504F114B2472D34D00B67EB8 /* AVKit.framework */; };
 		504F114F2472D5D500B67EB8 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F114E2472D5D500B67EB8 /* VideoPlayer.swift */; };
-		504F11542472E18800B67EB8 /* Tristan-Trevino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 504F11512472E18800B67EB8 /* Tristan-Trevino.jpg */; };
-		504F11552472E18800B67EB8 /* Barnet-Levinson.png in Resources */ = {isa = PBXBuildFile; fileRef = 504F11522472E18800B67EB8 /* Barnet-Levinson.png */; };
-		504F11572472E1E900B67EB8 /* Morgan-and-Tyler-Langlais.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 504F11562472E1E900B67EB8 /* Morgan-and-Tyler-Langlais.jpg */; };
 		504F115B2472FCD000B67EB8 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F115A2472FCD000B67EB8 /* GithubAPI.swift */; };
 		504F115D2473039700B67EB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F115C2473039700B67EB8 /* ViewModel.swift */; };
 		504F115F24730BA900B67EB8 /* CongratsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F115E24730BA900B67EB8 /* CongratsItem.swift */; };
@@ -45,9 +42,6 @@
 		504F114A2472D34D00B67EB8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		504F114B2472D34D00B67EB8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		504F114E2472D5D500B67EB8 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
-		504F11512472E18800B67EB8 /* Tristan-Trevino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Tristan-Trevino.jpg"; path = "../../docker/images/Tristan-Trevino.jpg"; sourceTree = "<group>"; };
-		504F11522472E18800B67EB8 /* Barnet-Levinson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Barnet-Levinson.png"; path = "../../docker/images/Barnet-Levinson.png"; sourceTree = "<group>"; };
-		504F11562472E1E900B67EB8 /* Morgan-and-Tyler-Langlais.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Morgan-and-Tyler-Langlais.jpg"; path = "../../docker/images/Morgan-and-Tyler-Langlais.jpg"; sourceTree = "<group>"; };
 		504F115A2472FCD000B67EB8 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		504F115C2473039700B67EB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		504F115E24730BA900B67EB8 /* CongratsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsItem.swift; sourceTree = "<group>"; };
@@ -70,7 +64,6 @@
 		504C2EA824708ADF0012DA56 = {
 			isa = PBXGroup;
 			children = (
-				504F113B2471BFFC00B67EB8 /* TestImages */,
 				504C2EB324708ADF0012DA56 /* HappyGrad */,
 				504C2EB224708ADF0012DA56 /* Products */,
 				504F11492472D34D00B67EB8 /* Frameworks */,
@@ -121,16 +114,6 @@
 				504F114E2472D5D500B67EB8 /* VideoPlayer.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		504F113B2471BFFC00B67EB8 /* TestImages */ = {
-			isa = PBXGroup;
-			children = (
-				504F11522472E18800B67EB8 /* Barnet-Levinson.png */,
-				504F11562472E1E900B67EB8 /* Morgan-and-Tyler-Langlais.jpg */,
-				504F11512472E18800B67EB8 /* Tristan-Trevino.jpg */,
-			);
-			path = TestImages;
 			sourceTree = "<group>";
 		};
 		504F11492472D34D00B67EB8 /* Frameworks */ = {
@@ -207,9 +190,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				504C2EC424708AE20012DA56 /* LaunchScreen.storyboard in Resources */,
-				504F11542472E18800B67EB8 /* Tristan-Trevino.jpg in Resources */,
-				504F11552472E18800B67EB8 /* Barnet-Levinson.png in Resources */,
-				504F11572472E1E900B67EB8 /* Morgan-and-Tyler-Langlais.jpg in Resources */,
 				504C2EC124708AE20012DA56 /* Preview Assets.xcassets in Resources */,
 				504C2EBE24708AE20012DA56 /* Assets.xcassets in Resources */,
 			);
