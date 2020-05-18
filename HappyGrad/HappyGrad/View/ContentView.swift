@@ -9,18 +9,29 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var names: [String] = ["Tristan-Trevino", "Morgan-and-Tyler-Langlais", "Barnet-Levinson"]
+  @ObservedObject var viewModel: ViewModel
+  
+  init(model: ViewModel) {
+    self.viewModel = model
+  }
+  
   var body: some View {
     NavigationView {
-      CongratsList(names: names)
+      CongratsList(items: self.viewModel.allItems)
         .navigationBarTitle("Congratulations!!!")
-     
+    }
+    .alert(item: self.$viewModel.error) { error in
+      Alert(
+        title: Text("Network error"),
+        message: Text(error.localizedDescription),
+        dismissButton: .cancel()
+      )
     }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView(names: ["Tristan-Trevino", "Morgan-and-Tyler-Langlais", "Barnet-Levinson"])
+    ContentView(model: ViewModel())
   }
 }

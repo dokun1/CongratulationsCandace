@@ -11,20 +11,18 @@ import AVFoundation
 import AVKit
 
 struct CongratsList: View {
+  var items: [CongratsItem]
+  
   @State private var isShowingVideo = false
-  @State private var videoURLToShow = VideoURLValidator.sampleURL
-  @State var names: [String] = []
+  @State private var videoURLToShow: URL = GithubAPI.EndPoint.apiURL.absoluteURL
+  
   var body: some View {
-    List(names, id: \.self) { name in
-      ListCell(imageName: name)
+    List(self.items) { item in
+      ListCell(cellItem: item)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .onTapGesture {
-          do {
-            self.videoURLToShow = try VideoURLValidator.url(for: name)
-            self.isShowingVideo.toggle()
-          } catch let error {
-            print("Error: \(error.localizedDescription)")
-          }
+          self.videoURLToShow = item.videoURL
+          self.isShowingVideo.toggle()
       }
     }.onAppear {
       UITableView.appearance().separatorStyle = .none
@@ -32,10 +30,10 @@ struct CongratsList: View {
       VideoPlayerView(videoURL: self.$videoURLToShow)
     }   .background(Color.gray)
   }
-  
-  struct CongratsList_Previews: PreviewProvider {
-    static var previews: some View {
-      CongratsList(names: ["Tristan-Trevino", "Morgan-and-Tyler-Langlais", "Barnet-Levinson"])
-    }
+}
+
+struct CongratsList_Previews: PreviewProvider {
+  static var previews: some View {
+    CongratsList(items: [CongratsItem(id: "krdhudfhg", name: "Morgan-Langlais"), CongratsItem(id: "dfiughudifhg", name: "Barnet-Levinson.jpg")])
   }
 }

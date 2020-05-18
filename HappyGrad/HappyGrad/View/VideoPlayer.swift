@@ -5,12 +5,12 @@
 //  Created by David Okun on 5/18/20.
 //  Copyright © 2020 David Okun. All rights reserved.
 //
+
 import SwiftUI
 import AVFoundation
 import AVKit
 
 struct VideoPlayerView: UIViewControllerRepresentable {
-  
   @Binding var videoURL: URL
   
   private var player: AVPlayer {

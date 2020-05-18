@@ -7,29 +7,33 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
+import SDWebImage
 
 struct ListCell: View {
-  @State var imageName = ""
+  var cellItem: CongratsItem
   var body: some View {
     VStack {
-      Image(imageName)
+      WebImage(url: cellItem.imageURL)
         .resizable()
+        .indicator(.activity)
+        .animation(.default)
         .aspectRatio(contentMode: .fill)
         .frame(width: 250, height: 250)
         .clipShape(Circle())
         .overlay(Circle().stroke(Color.pink, lineWidth: 4))
         .shadow(radius: 10)
         .padding()
-      Text(imageName.replacingOccurrences(of: "-", with: " "))
+      Text(cellItem.displayName)
         .font(.title)
         .fontWeight(.bold)
         .multilineTextAlignment(.center)
-    }
+    }.padding()
   }
 }
 
 struct ListCell_Previews: PreviewProvider {
   static var previews: some View {
-    ListCell(imageName: "Barnet-Levinson")
+    ListCell(cellItem: CongratsItem(id: "dfghdfu", name: "Morgan-Langlais"))
   }
 }
