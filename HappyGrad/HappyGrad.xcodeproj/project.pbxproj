@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		503337E8247324FF00307F61 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 503337E7247324FF00307F61 /* SDWebImageSwiftUI */; };
+		503337ED247341B000307F61 /* CongratsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503337EC247341B000307F61 /* CongratsImage.swift */; };
 		504C2EB524708ADF0012DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2EB424708ADF0012DA56 /* AppDelegate.swift */; };
 		504C2EB724708ADF0012DA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2EB624708ADF0012DA56 /* SceneDelegate.swift */; };
 		504C2EBA24708ADF0012DA56 /* HappyGrad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 504C2EB824708ADF0012DA56 /* HappyGrad.xcdatamodeld */; };
-		504C2EBC24708ADF0012DA56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2EBB24708ADF0012DA56 /* ContentView.swift */; };
+		504C2EBC24708ADF0012DA56 /* CongratsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2EBB24708ADF0012DA56 /* CongratsView.swift */; };
 		504C2EBE24708AE20012DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504C2EBD24708AE20012DA56 /* Assets.xcassets */; };
 		504C2EC124708AE20012DA56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504C2EC024708AE20012DA56 /* Preview Assets.xcassets */; };
 		504C2EC424708AE20012DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504C2EC224708AE20012DA56 /* LaunchScreen.storyboard */; };
-		504C2ECC24708E9C0012DA56 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2ECB24708E9C0012DA56 /* ListCell.swift */; };
+		504C2ECC24708E9C0012DA56 /* CongratsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2ECB24708E9C0012DA56 /* CongratsCell.swift */; };
 		504C2ED024708EBD0012DA56 /* CongratsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2ECF24708EBD0012DA56 /* CongratsList.swift */; };
-		504C2ED82470902E0012DA56 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C2ED72470902E0012DA56 /* ActivityIndicator.swift */; };
 		504F114C2472D34D00B67EB8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504F114A2472D34D00B67EB8 /* AVFoundation.framework */; };
 		504F114D2472D34D00B67EB8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504F114B2472D34D00B67EB8 /* AVKit.framework */; };
 		504F114F2472D5D500B67EB8 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F114E2472D5D500B67EB8 /* VideoPlayer.swift */; };
@@ -27,18 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		503337EC247341B000307F61 /* CongratsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsImage.swift; sourceTree = "<group>"; };
 		504C2EB124708ADF0012DA56 /* HappyGrad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyGrad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504C2EB424708ADF0012DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		504C2EB624708ADF0012DA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		504C2EB924708ADF0012DA56 /* HappyGrad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HappyGrad.xcdatamodel; sourceTree = "<group>"; };
-		504C2EBB24708ADF0012DA56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		504C2EBB24708ADF0012DA56 /* CongratsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsView.swift; sourceTree = "<group>"; };
 		504C2EBD24708AE20012DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		504C2EC024708AE20012DA56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		504C2EC324708AE20012DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504C2EC524708AE20012DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		504C2ECB24708E9C0012DA56 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		504C2ECB24708E9C0012DA56 /* CongratsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsCell.swift; sourceTree = "<group>"; };
 		504C2ECF24708EBD0012DA56 /* CongratsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsList.swift; sourceTree = "<group>"; };
-		504C2ED72470902E0012DA56 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		504F114A2472D34D00B67EB8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		504F114B2472D34D00B67EB8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		504F114E2472D5D500B67EB8 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
@@ -61,6 +61,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503337EA2473416300307F61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504F115E24730BA900B67EB8 /* CongratsItem.swift */,
+				504F115A2472FCD000B67EB8 /* GithubAPI.swift */,
+				504F115C2473039700B67EB8 /* ViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		503337EB2473416E00307F61 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				504C2EB424708ADF0012DA56 /* AppDelegate.swift */,
+				504C2EB624708ADF0012DA56 /* SceneDelegate.swift */,
+				504F114E2472D5D500B67EB8 /* VideoPlayer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		504C2EA824708ADF0012DA56 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +101,8 @@
 		504C2EB324708ADF0012DA56 /* HappyGrad */ = {
 			isa = PBXGroup;
 			children = (
-				504C2EB424708ADF0012DA56 /* AppDelegate.swift */,
-				504C2EB624708ADF0012DA56 /* SceneDelegate.swift */,
-				504F115A2472FCD000B67EB8 /* GithubAPI.swift */,
-				504F115C2473039700B67EB8 /* ViewModel.swift */,
+				503337EB2473416E00307F61 /* App */,
+				503337EA2473416300307F61 /* Model */,
 				504C2ED124708ED40012DA56 /* View */,
 				504C2EBD24708AE20012DA56 /* Assets.xcassets */,
 				504C2EC224708AE20012DA56 /* LaunchScreen.storyboard */,
@@ -106,12 +124,10 @@
 		504C2ED124708ED40012DA56 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				504C2EBB24708ADF0012DA56 /* ContentView.swift */,
-				504C2ECB24708E9C0012DA56 /* ListCell.swift */,
-				504F115E24730BA900B67EB8 /* CongratsItem.swift */,
+				504C2EBB24708ADF0012DA56 /* CongratsView.swift */,
 				504C2ECF24708EBD0012DA56 /* CongratsList.swift */,
-				504C2ED72470902E0012DA56 /* ActivityIndicator.swift */,
-				504F114E2472D5D500B67EB8 /* VideoPlayer.swift */,
+				504C2ECB24708E9C0012DA56 /* CongratsCell.swift */,
+				503337EC247341B000307F61 /* CongratsImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,10 +222,10 @@
 				504F115B2472FCD000B67EB8 /* GithubAPI.swift in Sources */,
 				504C2EBA24708ADF0012DA56 /* HappyGrad.xcdatamodeld in Sources */,
 				504F115D2473039700B67EB8 /* ViewModel.swift in Sources */,
-				504C2EBC24708ADF0012DA56 /* ContentView.swift in Sources */,
-				504C2ED82470902E0012DA56 /* ActivityIndicator.swift in Sources */,
-				504C2ECC24708E9C0012DA56 /* ListCell.swift in Sources */,
+				504C2EBC24708ADF0012DA56 /* CongratsView.swift in Sources */,
+				504C2ECC24708E9C0012DA56 /* CongratsCell.swift in Sources */,
 				504C2ED024708EBD0012DA56 /* CongratsList.swift in Sources */,
+				503337ED247341B000307F61 /* CongratsImage.swift in Sources */,
 				504F115F24730BA900B67EB8 /* CongratsItem.swift in Sources */,
 				504C2EB724708ADF0012DA56 /* SceneDelegate.swift in Sources */,
 				504F114F2472D5D500B67EB8 /* VideoPlayer.swift in Sources */,

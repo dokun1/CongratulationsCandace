@@ -18,7 +18,7 @@ struct CongratsList: View {
   
   var body: some View {
     List(self.items) { item in
-      ListCell(cellItem: item)
+      CongratsCell(cellItem: item)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .onTapGesture {
           self.videoURLToShow = item.videoURL
