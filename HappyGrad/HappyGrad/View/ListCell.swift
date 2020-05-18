@@ -14,8 +14,8 @@ struct ListCell: View {
     VStack {
       Image(imageName)
         .resizable()
-        .aspectRatio(contentMode: .fit)
-        .frame(width: 200, height: 200)
+        .aspectRatio(contentMode: .fill)
+        .frame(width: 250, height: 250)
         .clipShape(Circle())
         .overlay(Circle().stroke(Color.white, lineWidth: 4))
         .shadow(radius: 10)
