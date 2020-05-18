@@ -19,7 +19,10 @@ struct CongratsList: View {
       ListCell(imageName: name)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .onTapGesture {
-          self.isShowingVideo.toggle()
+          if let url = URL(string: "https://github.com/dokun1/CongratulationsCandace/blob/master/docker/videos/\(name).mov?raw=true") {
+            self.videoURLToShow = url
+            self.isShowingVideo.toggle()
+          }
       }
     }.onAppear {
       UITableView.appearance().separatorStyle = .none
