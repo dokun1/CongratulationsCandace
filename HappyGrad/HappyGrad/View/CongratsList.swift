@@ -27,7 +27,8 @@ struct CongratsList: View {
     }.onAppear {
       UITableView.appearance().separatorStyle = .none
     }.sheet(isPresented: $isShowingVideo) {
-      VideoPlayerView(videoURL: self.$videoURLToShow).edgesIgnoringSafeArea(.all)
+      VideoPlayerView(videoURL: self.$videoURLToShow)
+        .edgesIgnoringSafeArea(.all)
     }
   }
 }
