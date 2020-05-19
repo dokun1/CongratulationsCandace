@@ -18,6 +18,7 @@ struct CongratsCell: View {
         .font(.title)
         .fontWeight(.bold)
         .multilineTextAlignment(.center)
+        .background(Color.clear)
     }.padding()
   }
 }

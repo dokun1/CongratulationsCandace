@@ -21,7 +21,7 @@ struct CongratsImage: View {
       .frame(width: 250, height: 250)
       .clipShape(Circle())
       .overlay(Circle().stroke(Color.pink, lineWidth: 4))
-      .shadow(color: Color.pink, radius: 20)
+      .shadow(color: Color.pink, radius: 15)
       .padding()
   }
 }
