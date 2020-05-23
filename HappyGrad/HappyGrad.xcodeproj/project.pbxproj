@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		503337EC247341B000307F61 /* CongratsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsImage.swift; sourceTree = "<group>"; };
-		504C2EB124708ADF0012DA56 /* HappyGrad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyGrad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504C2EB124708ADF0012DA56 /* Master Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master Candy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		504C2EB424708ADF0012DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		504C2EB624708ADF0012DA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		504C2EB924708ADF0012DA56 /* HappyGrad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HappyGrad.xcdatamodel; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		504C2EB224708ADF0012DA56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				504C2EB124708ADF0012DA56 /* HappyGrad.app */,
+				504C2EB124708ADF0012DA56 /* Master Candy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 				503337E7247324FF00307F61 /* SDWebImageSwiftUI */,
 			);
 			productName = HappyGrad;
-			productReference = 504C2EB124708ADF0012DA56 /* HappyGrad.app */;
+			productReference = 504C2EB124708ADF0012DA56 /* Master Candy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -375,9 +375,11 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.okun.HappyGrad;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Master Candy";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64 $(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -396,9 +398,11 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.okun.HappyGrad;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Master Candy";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64 $(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
